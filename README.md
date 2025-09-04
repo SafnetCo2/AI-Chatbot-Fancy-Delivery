@@ -62,7 +62,8 @@ Automatically collects names & emails.
 
 Optional: integrate with Google Sheets, email API, or CRM systems.
 
-🔗 Live Demo: [https://safnetco2.github.io/AI-Chatbot-Fancy-Delivery/](https://safnetco2.github.io/AI-Chatbot-Fancy-Delivery/)
+## 🔗 Live Demo: 
+[https://safnetco2.github.io/AI-Chatbot-Fancy-Delivery/](https://safnetco2.github.io/AI-Chatbot-Fancy-Delivery/)
 
 
 ## Screenshots & Demo Video 
