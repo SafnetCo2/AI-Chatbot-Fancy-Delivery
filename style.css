@@ -1,0 +1,47 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* Floating Chat Button */
+.chat-button {
+  position: fixed; bottom: 20px; right: 20px;
+  background: #4CAF50; color: white; padding: 15px 20px;
+  border-radius: 50px; cursor: pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: background 0.3s; z-index: 1000;
+}
+.chat-button:hover { background: #45a049; }
+
+/* Chat Container */
+.chat-container {
+  position: fixed; bottom: 80px; right: 20px; width: 350px; max-height: 550px;
+  background: #fff; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  display: none; flex-direction: column; overflow: hidden; z-index: 1000;
+}
+
+/* Header */
+.chat-header {
+  background: #4CAF50; color: #fff; padding: 12px;
+  font-weight: bold; display: flex; justify-content: space-between; align-items: center;
+}
+.chat-header .close-btn { cursor: pointer; font-weight: normal; }
+
+/* Messages */
+.chat-messages {
+  flex: 1; padding: 15px; overflow-y: auto; background: #f9f9f9;
+}
+.chat-message { margin-bottom: 12px; padding: 8px 12px; border-radius: 20px; display: inline-block; max-width: 80%; animation: fadeIn 0.3s; }
+.chat-message.user { background: #e0e0e0; align-self: flex-end; }
+.chat-message.bot { background: #4CAF50; color: #fff; align-self: flex-start; }
+
+/* Input Area */
+.chat-input { display: flex; border-top: 1px solid #ddd; }
+#userInput { flex: 1; padding: 12px; border: none; outline: none; }
+#sendBtn { background: #4CAF50; color: #fff; border: none; padding: 12px 15px; cursor: pointer; transition: background 0.3s; }
+#sendBtn:hover { background: #45a049; }
+
+/* Lead Form */
+.lead-form { display: flex; flex-direction: column; padding: 10px; border-top: 1px solid #ddd; }
+.lead-form input { padding: 10px; margin-bottom: 5px; border-radius: 5px; border: 1px solid #ccc; outline: none; }
+.lead-form button { background: #4CAF50; color: #fff; border: none; padding: 10px; cursor: pointer; border-radius: 5px; transition: background 0.3s; }
+.lead-form button:hover { background: #45a049; }
+
+/* Animations */
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
